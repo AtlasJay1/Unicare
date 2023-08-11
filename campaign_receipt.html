@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript">
 		var ref = window.location.search;
+		console.log(ref);
 		if (!ref.includes('#receipt')) {
 			ref = ref + '#receipt';
 			window.location.href = ref;
@@ -70,6 +71,7 @@
 			}
 			else
 			{
+				console.log('error block');
 				document.getElementById("failureBlock").style.display = "block";
 				document.getElementById("failureMessage").innerHTML = ref_obj.paymentResponse;
 				document.getElementById('retryLink').href = ref_obj.retryURL; 
@@ -398,7 +400,6 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/scrollax.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 		<script src="js/google-map.js"></script>
 		<script src="js/main.js"></script>
 		
